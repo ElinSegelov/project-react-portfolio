@@ -12,12 +12,12 @@ const Skills = () => {
           <div>
             <ListSection
               heading="Code"
-              ListItems={['HTML 5', 'CSS3', 'JavaScript ES6', 'React', 'Redux', 'Styled Components', 'Git', 'Node.js', 'Espress', 'MongoDB']} />
+              ListItems={['HTML 5', 'CSS3', 'JavaScript ES6', 'React', 'Redux', 'Styled Components', 'TailWind CSS', 'Node.js', 'Espress', 'MongoDB', 'Git']} />
           </div>
           <div>
             <ListSection
               heading="Upcoming"
-              ListItems={['Tailwind CSS', 'Typescript']} />
+              ListItems={['Typescript']} />
           </div>
           <div>
             <ListSection
