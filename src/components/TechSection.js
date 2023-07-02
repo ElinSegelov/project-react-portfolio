@@ -9,8 +9,7 @@ const TechSection = () => {
       <ContentWrapper>
         <h2>Tech</h2>
         <p>
-          HTML, CSS, Flexbox, Grid, JavaScript ES6, JSX, React, React Hooks, Redux,
-          Node.js, Mongo DB, Web Accessibility, API:s, mob-programming, pair-programming, Github.
+          HTML, CSS, JavaScript ES6, React, React Hooks, Redux, Node.js, Express, Mongo DB, Styled-Components, Tailwind CSS
         </p>
       </ContentWrapper>
     </StyledTechSection>
