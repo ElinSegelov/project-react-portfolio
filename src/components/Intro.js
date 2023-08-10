@@ -9,12 +9,12 @@ const Intro = () => {
       <ContentWrapper>
         <p>
           <Line /><Dot />
-          Hello World! I am a problem-solving Frontend Developer with great communication
-          skills and a knack for seeing things from different perspectives. I have several
-          years of working experience in social work, where I got to level up my interpersonal
-          skills. Now I want to use those skills together with my passion for coding to become
-          a truly skilled and communicative developer. I am aiming to go full-stack and learning
-          mobile app development further down the road.
+          Hello World! 🚀 Dive into the the portfolio of a Frontend Developer who melds
+          the art of problem-solving with exceptional communication, thanks to a sturdy
+          background in social work. My years in interpersonal dynamics now fuel my
+          coding passion, with an ambition to master full-stack and soon delve into
+          mobile app development. Curious to explore the synergy I bring? Let's have
+          a chat on LinkedIn.
         </p>
       </ContentWrapper>
     </StyledIntro>
