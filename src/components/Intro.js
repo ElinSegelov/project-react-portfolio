@@ -13,8 +13,10 @@ const Intro = () => {
           the art of problem-solving with exceptional communication, thanks to a sturdy
           background in social work. My years in interpersonal dynamics now fuel my
           coding passion, with an ambition to master full-stack and soon delve into
-          mobile app development. Curious to explore the synergy I bring? Let's have
-          a chat on LinkedIn.
+          mobile app development. Curious to explore the synergy I bring?
+          <Link href="https://www.linkedin.com/in/elin-s-683a867a/">
+            Let's have a chat on LinkedIn.
+          </Link>
         </p>
       </ContentWrapper>
     </StyledIntro>
@@ -45,4 +47,17 @@ const Dot = styled.span`
   height: 10px;
   width: 10px;
   margin-right: 8px;
+`
+const Link = styled.a`
+  font-weight: 700;
+  margin-left: 0.2rem;
+
+  @media (min-width: 1200px) {
+    transition: color .3s;
+    transition-timing-function: linear;
+
+    &:hover {
+      color: var(--ligtherGreen);
+    }
+  }
 `

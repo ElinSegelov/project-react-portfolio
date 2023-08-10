@@ -77,18 +77,19 @@ export const StyledListSection = styled.div`
   }
 `
 export const StyledLogo = styled.img`
-height: 3rem;
-margin: 0 .2rem;
-width: 3rem;
+  height: 3rem;
+  margin: 0 .2rem;
+  width: 3rem;
 
-@media (min-width: 1200px) {
-transition: transform .5s;
-transition-timing-function: linear;
+  @media (min-width: 1200px) {
+  transition: transform .5s;
+  transition-timing-function: linear;
 
-&:hover {
-  transform:scale(1.2);
-}
-}`
+    &:hover {
+      transform:scale(1.2);
+    }
+  }
+`
 
 export const LogoContainer = styled.div`
   height: 5rem;
