@@ -1,46 +1,32 @@
 import React from 'react';
 import styled from 'styled-components/macro';
-import BigThought from './BigThought';
-import OtherThought from './OtherThought';
-import { SubHeading, GridWrapper, StyledOther } from './ReusableStyles.style';
+import Post from './LinkedInPost'
+import { GridWrapper } from './ReusableStyles.style';
 import thoughtData from '../utils/thoughtData.json'
+import MoreArrows from './MoreArrows';
 
 const Thoughts = () => {
-  const bigThoughtsArray = thoughtData.bigThoughts;
-  const OtherThoughtsArray = thoughtData.otherThoughts;
+  const allLinkedInPosts = thoughtData.linkedInPosts;
 
-  const allBig = bigThoughtsArray.map((thought) => {
+  const linkedInPosts = allLinkedInPosts.map((post) => {
     return (
-      <BigThought
-        key={thought.id}
-        thoughtLink={thought.link}
-        thoughtImage={thought.image}
-        publishDate={thought.monthYear}
-        thoughtTitle={thought.title}
-        overlayText={thought.overlayText}
-        thoughtDescription={thought.description} />
+      <Post
+        key={post.id}
+        src={post.src} />
     )
   })
-  const allOther = OtherThoughtsArray.map((thought) => {
-    return (
-      <OtherThought
-        key={thought.id}
-        thoughtLink={thought.link}
-        publishDate={thought.monthYear}
-        thoughtTitle={thought.title} />
-    )
-  })
+
   return (
     <StyledProjectSection>
-      <h2>My thoughts</h2>
+      <h2>Code thoughts</h2>
       <GridWrapper>
-        {allBig}
+        {linkedInPosts}
       </GridWrapper>
-
-      <StyledOtherThoughts>
-        <SubHeading>More Thoughts</SubHeading>
-        {allOther}
-      </StyledOtherThoughts>
+      <LinkToLinkedIn
+        href="https://www.linkedin.com/in/elin-s-683a867a/">
+        <strong>For more thoughts on code, take a look at my LinkedIn profile</strong>
+        <MoreArrows />
+      </LinkToLinkedIn>
     </StyledProjectSection>
   )
 }
@@ -52,22 +38,17 @@ const StyledProjectSection = styled.section`
   display: flex;
   flex-direction: column;
 `
-
-const StyledOtherThoughts = styled(StyledOther)`
-  h3 {
-  font-size: 17px;
-  font-weight: 700;
-  padding-left: 0;
-  text-transform: uppercase;
-  background: none;
+const LinkToLinkedIn = styled.a`
   color: var(--heading);
-  margin: 30px auto 20px;
-}
-@media (min-width: 600px) {
-  justify-content: left; 
-  width: 80vw;
+  font-size: 18px;
+  margin: 1rem 0;
+  display: block;
+  text-decoration: underline;
+
+  @media (min-width: 1200px) {
+    transition: transform .5s;
+  &:hover {
+    transform: scale(1.1);
   }
-@media (min-width: 992px) {
-  width: 60vw;
 }
 `

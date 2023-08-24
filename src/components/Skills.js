@@ -27,7 +27,7 @@ const Skills = () => {
           <div>
             <ListSection
               heading="More"
-              ListItems={['Agile', 'Pair-programming', 'Mob-programming']} />
+              ListItems={['Agile methodology', 'Pair-programming', 'Mob-programming']} />
           </div>
         </StyledSkillsContainer>
       </ContentWrapper>

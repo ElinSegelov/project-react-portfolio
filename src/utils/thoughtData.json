@@ -1,4 +1,14 @@
 {
+  "linkedInPosts": [
+    {
+      "id": "1",
+      "src": "https://www.linkedin.com/embed/feed/update/urn:li:share:7100495201948893184"
+    },
+    {
+      "id": "2",
+      "src": "https://www.linkedin.com/embed/feed/update/urn:li:share:7097606409990623233"
+    }
+  ],
   "bigThoughts": [
     {
       "id": "1",

@@ -19,7 +19,7 @@ const ClipBoard = () => {
       1800
     );
     setCopied(true);
-  }, []); // empty dependency array
+  }, []);
 
   return (
     <div>
@@ -34,14 +34,14 @@ const ClipBoard = () => {
 export default ClipBoard;
 
 const ContactButton = styled.button`
-    color: #FFF;
-    display: block;
-    font-family: 'Montserrat', serif;
-    margin: 0 auto;
-    font-size: 17px;
-    cursor: pointer;
-    background-color: transparent
-    `
+  color: #FFF;
+  display: block;
+  font-family: 'Montserrat', serif;
+  margin: 0 auto;
+  font-size: 17px;
+  cursor: pointer;
+  background-color: transparent;
+`
 
 const CopiedMessage = styled.p`
   position: absolute;
@@ -53,7 +53,4 @@ const CopiedMessage = styled.p`
   bottom: -0.2rem;
   border-radius: 0.3rem;
   color: var(--heading) !important;
-  
-
-
 `
