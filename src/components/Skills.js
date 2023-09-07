@@ -12,7 +12,7 @@ const Skills = () => {
           <div>
             <ListSection
               heading="Code"
-              ListItems={['React', 'Redux', 'Styled Components', 'TailWind CSS', 'TypeScript', 'Node.js', 'REST-API', 'Next.js', 'MongoDB', 'JavaScript ES6', 'HTML 5', 'CSS3', 'Git', ']} />
+              ListItems={['React', 'Redux', 'Styled Components', 'TailWind CSS', 'TypeScript', 'Node.js', 'REST-API', 'Next.js', 'MongoDB', 'JavaScript ES6', 'HTML 5', 'CSS3', 'Git']} />
           </div>
           <div>
             <ListSection
