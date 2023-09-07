@@ -13,7 +13,7 @@ const Header = ({ linkedinLogo, githubLogo, stackOverflowLogo }) => {
           <h3>Portfolio: Elin Segelöv</h3>
           <h1>frontend</h1> <h1>developer</h1>
           <NoBackgroundH2>
-            and proficient googler
+            [React, Redux, Node.js, Express, TailwindCSS, TypeScript, NextJS]
           </NoBackgroundH2>
         </HeroText>
         <Logos
