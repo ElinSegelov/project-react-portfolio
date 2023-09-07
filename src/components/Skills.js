@@ -12,12 +12,12 @@ const Skills = () => {
           <div>
             <ListSection
               heading="Code"
-              ListItems={['HTML 5', 'CSS3', 'JavaScript ES6', 'React', 'Redux', 'Styled Components', 'TailWind CSS', 'Node.js', 'Espress', 'MongoDB', 'Git']} />
+              ListItems={['React', 'Redux', 'Styled Components', 'TailWind CSS', 'TypeScript', 'Node.js', 'REST-API', 'Next.js', 'MongoDB', 'JavaScript ES6', 'HTML 5', 'CSS3', 'Git', ']} />
           </div>
           <div>
             <ListSection
               heading="Upcoming"
-              ListItems={['Typescript']} />
+              ListItems={['More TypeScript', 'Jest']} />
           </div>
           <div>
             <ListSection
@@ -27,7 +27,7 @@ const Skills = () => {
           <div>
             <ListSection
               heading="More"
-              ListItems={['Agile methodology', 'Pair-programming', 'Mob-programming']} />
+              ListItems={['Agile methodology', 'Pair-programming', 'Mob-programming', 'Excellent interpersonal skills']} />
           </div>
         </StyledSkillsContainer>
       </ContentWrapper>
