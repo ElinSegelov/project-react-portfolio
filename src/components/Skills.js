@@ -11,8 +11,8 @@ const Skills = () => {
         <StyledSkillsContainer>
           <div>
             <ListSection
-              heading="Code"
-              ListItems={['React', 'Redux', 'Styled Components', 'TailWind CSS', 'TypeScript', 'Node.js', 'REST-API', 'Next.js', 'MongoDB', 'JavaScript ES6', 'HTML 5', 'CSS3', 'Git']} />
+              heading="Tech stack"
+              ListItems={['React', 'Redux', 'TypeScript', 'TailWind CSS', 'Node.js', 'REST-API', 'Next.js', 'MongoDB', 'Styled-Components', 'JavaScript ES6', 'HTML 5', 'CSS3', 'Git']} />
           </div>
           <div>
             <ListSection
@@ -56,29 +56,12 @@ const StyledSkillsContainer = styled.div`
   @media (min-width: 600px) {
     display: grid;
     grid-gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     width: 80vw;
   }
+
   @media (min-width: 992px) {
     width: 60vw;
+  }
 
-  }
-  
-  div:nth-child(1) {
-  grid-column: 1
-  }
-  div:nth-child(2) {
-    grid-column: 1;
-  }
-  div:nth-child(3) {
-    grid-column: 2;
-
-  }
-  div:nth-child(4) {
-    grid-column: 2;
-    @media (min-width: 600px) {
-      grid-column: 3;
-    }
-  }
-  
 `

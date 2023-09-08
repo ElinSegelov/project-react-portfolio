@@ -13,7 +13,7 @@ const Header = ({ linkedinLogo, githubLogo, stackOverflowLogo }) => {
           <h3>Portfolio: Elin Segelöv</h3>
           <h1>frontend</h1> <h1>developer</h1>
           <NoBackgroundH2>
-            [React, Redux, Node.js, Express, TailwindCSS, TypeScript, NextJS]
+            [React, Redux, Node.js, REST-API, Tailwind CSS, TypeScript, NextJS]
           </NoBackgroundH2>
         </HeroText>
         <Logos
@@ -63,7 +63,7 @@ const HeroText = styled.div`
   h2 {
   margin-top: 0;
   text-align: left;
-  text-transform: lowercase;
+  text-transform: capitalize;
   }
 
   h3 {
