@@ -3,18 +3,17 @@ import styled from 'styled-components/macro';
 import profileImage from '../images/portrait.webp';
 import heroImage from '../images/hero-img.webp'
 import Logos from './Logos';
-import { NoBackgroundH2 } from './ReusableStyles.style';
 
 const Header = ({ linkedinLogo, githubLogo, stackOverflowLogo }) => {
   return (
     <StyledHeader>
       <HeroContainer>
         <HeroText>
-          <h3>Portfolio: Elin Segelöv</h3>
-          <h1>frontend</h1> <h1>developer</h1>
-          <NoBackgroundH2>
-            [React, Redux, Node.js, REST-API, Tailwind CSS, TypeScript, NextJS]
-          </NoBackgroundH2>
+          <h1>Portfolio: Elin Segelöv</h1>
+          <h2>frontend</h2> <h2>developer</h2>
+          <h3>
+            [React, Redux, Node.js, Tailwind CSS, REST-APIs, TypeScript, NextJS]
+          </h3>
         </HeroText>
         <Logos
           githubLogo={githubLogo}
@@ -37,6 +36,7 @@ const StyledHeader = styled.header`
   max-height: 30rem;
   position: relative;
   width: 100vw;
+  padding: 0 1rem;
   
   @media (min-width: 600px) {
   height: 30rem;
@@ -56,29 +56,42 @@ const HeroContainer = styled.div`
 const HeroText = styled.div`
   color: #FCF8EC;
   position: absolute;
-  left: 1rem;
   top: 10rem;
   width: fit-content;
 
-  h2 {
-  margin-top: 0;
-  text-align: left;
-  text-transform: capitalize;
-  }
 
+  h2 {
+    background: none;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: .2rem;
+    text-transform: capitalize;
+    margin: 0;
+    text-align: left;
+    padding: 0;
+  }
+  
   h3 {
-  background: none;
-  color: #FCF8EC;
-  margin: 0;
-  padding: 0;
+    text-align: left;
+    text-transform: capitalize;
+    font-size: 1rem;
+    background: none;
+    color: #FCF8EC;
+    margin: 0.5rem 0;
+    padding: 0;
   }
 
   @media (min-width: 600px) {
-    top: 10rem; 
+    top: auto; 
+    bottom: 8rem; 
+    left: 1rem;
     
-    h1 {
+    h2 {
       font-size: 50px;
     }
+  }
+  @media (min-width: 1024px) {
+    bottom: 5rem;
   }
 `
 const PortraitImg = styled.img`
@@ -90,7 +103,7 @@ const PortraitImg = styled.img`
   bottom: -1.5rem;
   width: 7rem;
 
-@media (min-width: 600px) {
-    width: 10rem;
-}
+  @media (min-width: 600px) {
+      width: 10rem;
+  }
 `

@@ -58,22 +58,27 @@ export const GridWrapper = styled.div`
   }
   @media (min-width: 992px) {
     width: 60vw;
-
+    
   }
-
-`
+  
+  `
 
 export const StyledListSection = styled.div`
   display: block;
-  justify-self: center;
-  text-align: center;
- 
+  
+  h3 {
+    text-align: left;
+  }
   ul {
-  list-style-type: none;
-  margin-bottom: 16px;
+    list-style-type: none;
+    margin-bottom: 16px;
   }
   li {
-  padding: 4px; 
+    padding: 4px; 
+  }
+  @media (min-width: 600px) {
+    justify-self: center;
+    
   }
 `
 export const StyledLogo = styled.img`

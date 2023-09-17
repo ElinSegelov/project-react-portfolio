@@ -1,5 +1,3 @@
-/* eslint-disable max-len */
-/* eslint-disable no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components/macro';
 import FeaturedProject from './FeaturedProject';
@@ -69,18 +67,3 @@ const StyledProjectSection = styled.section`
   flex-direction: column;
   justify-self: center;
 `
-const StyledOtherWrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  position: relative;
-  
-  @media (min-width: 600px) {
-    justify-content: left;
-    width: 80vw;
-    gap: 1.5rem;
-  }
-  @media (min-width: 900px) {
-    width: 60vw;
-  }
-  `

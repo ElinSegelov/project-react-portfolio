@@ -35,7 +35,7 @@ p {
 `
 
 const ContactWrapper = styled.div`
-position: relative;
-width: fit-content;
-margin: 0 auto;
+  position: relative;
+  width: fit-content;
+  margin: 0 auto;
 `

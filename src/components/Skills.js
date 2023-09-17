@@ -9,26 +9,18 @@ const Skills = () => {
       <ContentWrapper>
         <h2>Skills</h2>
         <StyledSkillsContainer>
-          <div>
-            <ListSection
-              heading="Tech stack"
-              ListItems={['React', 'Redux', 'TypeScript', 'TailWind CSS', 'Node.js', 'REST-API', 'Next.js', 'MongoDB', 'Styled-Components', 'JavaScript ES6', 'HTML 5', 'CSS3', 'Git']} />
-          </div>
-          <div>
-            <ListSection
-              heading="Upcoming"
-              ListItems={['More TypeScript', 'Jest']} />
-          </div>
-          <div>
-            <ListSection
-              heading="Toolbox"
-              ListItems={['VS Code', 'GitHub', 'Kanban', 'Jira', 'Trello', 'Slack']} />
-          </div>
-          <div>
-            <ListSection
-              heading="More"
-              ListItems={['Agile methodology', 'Pair-programming', 'Mob-programming', 'Excellent interpersonal skills']} />
-          </div>
+          <ListSection
+            heading="Tech stack"
+            ListItems={['React', 'Redux', 'TypeScript', 'TailWind CSS', 'Node.js', 'REST-API', 'Next.js', 'MongoDB', 'Styled-Components', 'JavaScript ES6', 'HTML 5', 'CSS3', 'Git']} />
+          <ListSection
+            heading="Toolbox"
+            ListItems={['VS Code', 'GitHub', 'Kanban', 'Jira', 'Trello', 'Slack']} />
+          <ListSection
+            heading="Upcoming"
+            ListItems={['More TypeScript', 'Jest']} />
+          <ListSection
+            heading="More"
+            ListItems={['Agile methodology', 'Pair-programming', 'Mob-programming', 'Excellent interpersonal skills']} />
         </StyledSkillsContainer>
       </ContentWrapper>
     </StyledSkillsWrapper>
@@ -38,25 +30,28 @@ const Skills = () => {
 export default Skills;
 
 const StyledSkillsWrapper = styled(DarkerContainer)`
-
-h3 {
-  background-color: transparent;
-  color: var(--heading);
-  font-size: 17px;
-  margin: 0 auto;
-}
+  h3 {
+    background-color: transparent;
+    color: var(--heading);
+    font-size: 17px;
+    margin: 0 auto;
+  }
 `
 const StyledSkillsContainer = styled.div`
   display: grid;
-  grid-auto-flow: column dense;
+  //grid-auto-flow: column dense;
   grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2;
   width: 100%;
   max-width: 1000px;
-
+  
+  
+  
   @media (min-width: 600px) {
     display: grid;
     grid-gap: 2rem;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
     width: 80vw;
   }
 

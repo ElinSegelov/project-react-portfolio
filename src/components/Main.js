@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import ForMore from './ForMore';
 import Intro from './Intro';

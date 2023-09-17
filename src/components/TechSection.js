@@ -1,4 +1,3 @@
-/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import styled from 'styled-components/macro';
 import { ContentWrapper } from './ReusableStyles.style';

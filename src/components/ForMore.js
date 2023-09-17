@@ -1,8 +1,7 @@
-/* eslint-disable no-unused-vars */
 import React from 'react';
 import Logos from './Logos';
 
-const ForMore = ({ linkedinLogo, githubLogo, stackOverflowLogo }) => {
+const ForMore = ({ linkedinLogo, githubLogo }) => {
   return (
     <section>
       <h2>For more</h2>
