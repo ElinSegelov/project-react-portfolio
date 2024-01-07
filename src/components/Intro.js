@@ -14,7 +14,7 @@ const Intro = () => {
           background in social work. My years in interpersonal dynamics now fuel my
           coding passion, with an ambition to master full-stack and soon delve into
           mobile app development. Curious to explore the synergy I bring?
-          <Link href="https://www.linkedin.com/in/elin-s-683a867a/">
+          <Link href="https://www.linkedin.com/in/elin-segelov/">
             Let's have a chat on LinkedIn.
           </Link>
         </p>
